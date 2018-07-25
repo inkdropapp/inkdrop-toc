@@ -1,6 +1,9 @@
 # Table of Contents for Inkdrop
 
 A plugin for creating table of contents using [remark-toc](https://github.com/remarkjs/remark-toc).
+It also works exported HTML files.
+
+![example](https://raw.githubusercontent.com/inkdropapp/inkdrop-toc/docs/example.png)
 
 # Usage
 
