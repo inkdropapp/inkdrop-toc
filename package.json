@@ -1,7 +1,7 @@
 {
   "name": "toc",
-  "main": "./lib/inkdrop-toc",
-  "version": "1.4.2",
+  "main": "./lib/toc",
+  "version": "2.0.0",
   "description": "Markdown Table of Contents plugin for Inkdrop",
   "keywords": [
     "toc",
@@ -12,7 +12,7 @@
     "build": "babel src/ -d lib/",
     "dev": "babel src/ -s -d lib/ --watch"
   },
-  "repository": "https://github.com/blacroix/inkdrop-toc.git",
+  "repository": "https://github.com/inkdropapp/inkdrop-toc.git",
   "license": "MIT",
   "engines": {
     "inkdrop": ">=3.7.3 <4.0.0"
@@ -22,10 +22,14 @@
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
-    "eslint": "4.19.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.8.2",
-    "react": "16.4.0"
+    "prettier": "^1.13.7"
   }
 }
