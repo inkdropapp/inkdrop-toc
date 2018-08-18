@@ -20,8 +20,9 @@ export default function createRemarkAnchor(OrigA) {
     handleClickLink = e => {
       const { props } = this
       const mdePreview = document.querySelector('.mde-preview')
-      const section = document.querySelector(props.href)
-      mdePreview.scrollTop = section.offsetTop
+      const sectionId = decodeURIComponent(props.href)
+      const section = document.querySelector(sectionId)
+      mdePreview.scrollTop = section.offsetTop - mdePreview.offsetTop
       e.preventDefault()
     }
   }
