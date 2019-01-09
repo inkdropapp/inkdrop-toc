@@ -5,6 +5,12 @@ It also works exported HTML files.
 
 ![example](https://raw.githubusercontent.com/inkdropapp/inkdrop-toc/master/docs/example.png)
 
+# Install
+
+```
+ipm install toc
+```
+
 # Usage
 
 Simply add `Table of Contents` to your Markdown.
