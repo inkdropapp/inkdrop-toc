@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 export default function createRemarkAnchor(OrigA) {
   return class RemarkAnchor extends React.Component {
