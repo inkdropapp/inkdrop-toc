@@ -22,7 +22,9 @@ export default function createRemarkAnchor(OrigA) {
       const mdePreview = document.querySelector('.mde-preview')
       const sectionId = decodeURIComponent(props.href)
       const section = document.querySelector(sectionId)
-      mdePreview.scrollTop = section.offsetTop - mdePreview.offsetTop
+      if (mdePreview && section) {
+        mdePreview.scrollTop = section.offsetTop - mdePreview.offsetTop
+      }
       e.preventDefault()
     }
   }
