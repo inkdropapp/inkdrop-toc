@@ -8,7 +8,7 @@ module.exports = {
   activate() {
     if (markdownRenderer) {
       markdownRenderer.remarkPlugins.push(Toc)
-      this.setTocLinkComponent()
+      !inkdrop.isMobile && this.setTocLinkComponent()
     }
   },
 
@@ -17,7 +17,7 @@ module.exports = {
       markdownRenderer.remarkPlugins = markdownRenderer.remarkPlugins.filter(
         plugin => plugin !== Toc
       )
-      this.unsetTocComponent()
+      !inkdrop.isMobile && this.unsetTocComponent()
     }
   },
 
