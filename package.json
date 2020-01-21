@@ -2,7 +2,7 @@
   "name": "toc",
   "main": "./lib/toc",
   "version": "3.0.0",
-  "description": "Markdown Table of Contents plugin for Inkdrop",
+  "description": "Generates table of contents from headings",
   "keywords": [
     "toc",
     "inkdrop",
