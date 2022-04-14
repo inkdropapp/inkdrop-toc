@@ -29,6 +29,10 @@ module.exports = {
   },
 
   unsetTocComponent() {
-    markdownRenderer.remarkReactComponents.a = this.origAComponent
+    if (this.origAComponent !== undefined) {
+      markdownRenderer.remarkReactComponents.a = this.origAComponent
+    } else {
+      delete markdownRenderer.remarkReactComponents.a
+    }
   }
 }
