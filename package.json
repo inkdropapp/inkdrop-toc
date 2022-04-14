@@ -1,7 +1,7 @@
 {
   "name": "toc",
   "main": "./lib/toc",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Generates table of contents from headings",
   "keywords": [
     "toc",
