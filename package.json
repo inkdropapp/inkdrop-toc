@@ -9,8 +9,7 @@
     "markdown"
   ],
   "scripts": {
-    "build": "babel src/ -d lib/",
-    "dev": "babel src/ -s -d lib/ --watch"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "repository": "https://github.com/inkdropapp/inkdrop-toc.git",
   "license": "MIT",
@@ -18,18 +17,14 @@
     "inkdrop": "^5.x"
   },
   "dependencies": {
-    "remark-toc": "^5.1.1"
+    "remark-toc": "^8.0.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.9",
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "eslint": "^8.13.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-react": "^7.29.4",
-    "prettier": "^2.6.2"
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.33.0",
+    "prettier": "^3.0.0",
+    "rollup": "^3.26.3"
   }
 }
