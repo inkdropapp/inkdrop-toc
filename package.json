@@ -14,7 +14,7 @@
   "repository": "https://github.com/inkdropapp/inkdrop-toc.git",
   "license": "MIT",
   "engines": {
-    "inkdrop": "^5.x"
+    "inkdrop": ">=5.6.0 <7.0.0"
   },
   "dependencies": {
     "remark-toc": "^8.0.1"
